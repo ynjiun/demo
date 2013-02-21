@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @post.product %>
+</p>
+
+<p>
+  <b>Spec:</b>
+  <%= @post.spec %>
+</p>
+
+<p>
+  <b>Pricehistory:</b>
+  <%= @post.pricehistory %>
+</p>
+
+<h2>Trackers</h2>
+<%= render @post.trackers %>
+
+<h2>Add a tracker:</h2>
+<%= form_for([@post, @post.trackers.build]) do |f| %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :tspec %><br />
+    <%= f.text_area :tspec %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

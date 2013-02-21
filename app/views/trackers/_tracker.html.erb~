@@ -1,0 +1,13 @@
+  <p>
+    <b>Tracker name:</b>
+    <%= tracker.name %>
+  </p>
+   <p>
+    <b>Tracker email:</b>
+    <%= tracker.email %>
+  </p>
+  <p>
+    <b>Track spec:</b>
+    <%= tracker.tspec %>
+  </p>
+

@@ -1,0 +1,14 @@
+<h1>Hello World!</h1>
+<%= link_to "My Price db", posts_path %>
+<p>Find me in app/views/home/index.html.erb</p>
+    <div id="recent_episodes">  
+      <h3>Recent ASCIIcasts Episodes</h3>  
+      <ul> 
+      <% for entry in @feed %>  
+        <dl>
+		<dt><%= link_to h(entry.name), entry.url %></dt>
+			<dd> <%= entry.summary.html_safe %></dd>
+	</dl>
+      <% end %>  
+      </ul>  
+    </div>  

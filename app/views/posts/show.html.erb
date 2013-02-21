@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Product:</b>
+  <%= @post.product %>
+</p>
+
+<p>
+  <b>Spec:</b>
+  <%= @post.spec %>
+</p>
+
+<p>
+  <b>Pricehistory:</b>
+  <%= @post.pricehistory %>
+</p>
+
+<h2>Trackers</h2>
+<%= render @post.trackers %>
+
+<h2>Add a tracker:</h2>
+<%= render "trackers/form" %>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

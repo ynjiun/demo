@@ -1,0 +1,7 @@
+class Post < ActiveRecord::Base
+  attr_accessible :pricehistory, :product, :spec
+
+  validates :product,	:presence => true
+
+  has_many :trackers
+end
