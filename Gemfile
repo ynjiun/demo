@@ -81,4 +81,9 @@ group :development, :test do
   gem 'cucumber-rails-training-wheels'
   gem 'database_cleaner'
   gem 'capybara'
+  gem 'guard-rspec', '1.2.1'
+  gem 'rb-inotify', '~> 0.9'
+  gem 'libnotify', '0.5.9'
+  gem 'guard-spork', '1.4.2'
+  gem 'spork', '0.9.2'
 end
