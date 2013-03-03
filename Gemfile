@@ -41,6 +41,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'bootstrap-sass', '2.1'
 gem 'activesupport', '~> 3.2.10'
 gem 'rails', '~> 3.2.6'
 gem 'require_relative'
